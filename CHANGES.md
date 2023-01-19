@@ -35,6 +35,10 @@
 
 - Two additional color modes added to the -t command line option.  5 uses default background color and basic color commands.  This should obey most terminal emulator color themes.  6 uses the RGB color mode and is stark black background.  -t 2 on Windows implements a dark background mode as well.
 
+- stdout is now supported for audio output via piping to other utilities.  To support this, all non-audio output must be redirected to stderr using the new -O option on the command line.
+
+- udp audio output is also now supported.  Use udp:destination:port style output device in the configuration file.
+
 
 
 ### Bugs Fixed: ###
